@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="images/favicon.png">
+	<title>Ekota Mart</title>
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="css/vendors_css.css">
+	<!-- Style-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin_color.css">
+
+</head>
+
+<body class="hold-transition dark-skin sidebar-mini theme-primary fixed">
+
+	<div class="wrapper">
+		<header class="main-header">
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top pl-30">
+				<!-- Sidebar toggle button-->
+				<div>
+					<ul class="nav">
+						<li class="btn-group nav-item">
+							<a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon"
+								data-toggle="push-menu" role="button">
+								<i class="nav-link-icon mdi mdi-menu"></i>
+							</a>
+						</li>
+						<li class="btn-group nav-item d-none d-xl-inline-block">
+							<a class="aiz-topbar-menu fs-13 fw-600 d-flex align-items-center justify-content-center "
+								href="index.html">Dashboard</a>
+						</li>
+
+						<li class="btn-group nav-item d-none d-xl-inline-block">
+							<a class="aiz-topbar-menu fs-13 fw-600 d-flex align-items-center justify-content-center "
+								href="all-order.html">Orders</a>
+						</li>
+						<li class="btn-group nav-item d-none d-xl-inline-block">
+							<a class="aiz-topbar-menu fs-13 fw-600 d-flex align-items-center justify-content-center active"
+								href="Earning-report.html">Earnings</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="navbar-custom-menu r-side">
+					<ul class="nav navbar-nav">
+						<!-- full Screen -->
+						<li class="search-bar">
+							<div class="lookup lookup-circle lookup-right">
+								<input type="text" name="s">
+							</div>
+						</li>
+						<!-- Notifications -->
+						<li class="dropdown notifications-menu">
+							<a href="#" class="waves-effect waves-light rounded dropdown-toggle" data-toggle="dropdown"
+								title="Notifications">
+								<i class="ti-bell"></i>
+							</a>
+							<ul class="dropdown-menu animated bounceIn">
+
+								<li class="header">
+									<div class="p-20">
+										<div class="flexbox">
+											<div>
+												<h4 class="mb-0 mt-0">Notifications</h4>
+											</div>
+											<div>
+												<a href="#" class="text-danger">Clear All</a>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<!-- inner menu: contains the actual data -->
+									<ul class="menu sm-scrol">
+										<li>
+											<a href="#">
+												<i class="fa fa-users text-info"></i> Curabitur id eros quis nunc
+												suscipit blandit.
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-warning text-warning"></i> Duis malesuada justo eu
+												sapien elementum, in semper diam posuere.
+											</a>
+										</li>
+
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">View all</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- User Account-->
+						<li class="dropdown user user-menu">
+							<a href="#" class="waves-effect waves-light rounded dropdown-toggle p-0"
+								data-toggle="dropdown" title="User">
+								<img src="images/admin-panel-img/user.png" alt="">
+							</a>
+							<ul class="dropdown-menu animated flipInX">
+								<li class="user-body">
+									<a class="dropdown-item" href="#"><i class="ti-user text-muted mr-2"></i>
+										Profile</a>
+									<a class="dropdown-item" href="#"><i class="ti-wallet text-muted mr-2"></i> My
+										Wallet</a>
+									<a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i>
+										Settings</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="log-out.html"><i class="ti-lock text-muted mr-2"></i>
+										Logout</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light">
+								<i class="ti-settings"></i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+            <!-- sidebar-->
+            <section class="sidebar">
+
+                <div class="user-profile">
+                    <div class="ulogo">
+                        <a href="index.html">
+                            <!-- logo for regular state and mobile devices -->
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="images/admin-panel-img/ekota-mart-logo.png" alt="" width="200">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- sidebar menu-->
+                <ul class="sidebar-menu" data-widget="tree">
+
+                    <li>
+                        <a href="index.html">
+                            <i data-feather="pie-chart"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+					<li class="treeview">
+                        <a href="#">
+							<i data-feather="hard-drive"></i>
+                            <span>POS System</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pos-manager.html"><i class="ti-more"></i>POS Manager</a></li>
+                            <li><a href="pos-configuration.html"><i class="ti-more"></i>POS Configuration</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="package"></i>
+                            <span>User Managnment</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="user.html"><i class="ti-more"></i>User</a></li>
+                            <li><a href="team-member.html"><i class="ti-more"></i>Team Member</a></li>
+                            <li><a href="roles-of-permission.html"><i class="ti-more"></i>Roles of permission</a></li>
+                            <li><a href="delete-account-request.html"><i class="ti-more"></i>Delete Account Request</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="lock"></i>
+                            <span>Admin Panel</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="log-in.html"><i class="ti-more"></i>Log In</a></li>
+                            <li><a href="register.html"><i class="ti-more"></i>Register</a></li>
+                            <li><a href="my-wallet.html"><i class="ti-more"></i>My Wallet</a></li>
+                            <li><a href="forgot-pass.html"><i class="ti-more"></i>Forgot Password</a></li>
+                            <li><a href="settings.html"><i class="ti-more"></i>Settings</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="package"></i>
+                            <span>product Managnment</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="all-product.html"><i class="ti-more"></i>All Products</a></li>
+                            <li><a href="create-new-product.html"><i class="ti-more"></i>Create New Product</a></li>
+                            <li><a href="expired.html"><i class="ti-more"></i>Expired Products</a></li>
+                            <li><a href="low-stocks.html"><i class="ti-more"></i>Low Stocks</a></li>
+                            <li><a href="category.html"><i class="ti-more"></i>Category</a></li>
+                            <li><a href="sub-category.html"><i class="ti-more"></i>Sub Category</a></li>
+                            <li><a href="brand.html"><i class="ti-more"></i>Brand</a></li>
+                            <li><a href="units.html"><i class="ti-more"></i>Units </a></li>
+                            <li><a href="bulk-import.html"><i class="ti-more"></i>Bluk Import </a></li>
+                            <li><a href="bulk-export.html"><i class="ti-more"></i> Bulk Export </a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="map"></i>
+                            <span>Stock Managnment</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="Available-stock.html"><i class="ti-more"></i>Available Stock </a></li>
+                            <li class="treeview">
+                                <a href="#">Promo
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+
+                                    <li><a href="coupons.html"><i class="ti-more"></i> Coupons </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="credit-card"></i><span>Purchases</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="purchases.html"><i class="ti-more"></i>Purchases</a></li>
+                            <li><a href="purchase-order.html"><i class="ti-more"></i>Purchase Order</a></li>
+                            <li><a href="purchase-return.html"><i class="ti-more"></i>Purchase Return</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="server"></i><span>Sales Managnment</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="all-order.html"><i class="ti-more"></i>All Orders</a></li>
+                            <li><a href="add-new-order.html"><i class="ti-more"></i>Add New Order</a></li>
+                            <li><a href="Confirmed-Order.html"><i class="ti-more"></i>Confirmed Order</a></li>
+                            <li><a href="Processed-Order.html"><i class="ti-more"></i>Processed Order</a></li>
+                            <li><a href="Order-Shipped.html"><i class="ti-more"></i>Order Shipped</a></li>
+                            <li><a href="Cancel-Order.html"><i class="ti-more"></i>Cancel Order </a></li>
+                            <li><a href="all-invoice.html"><i class="ti-more"></i>All Invoices</a></li>
+                            <li><a href="quotation.html"><i class="ti-more"></i>Quotation</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="server"></i>
+                            <span>Support Managnment</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="product-onversations.html"><i class="ti-more"></i>Product Conversations </a>
+                            </li>
+                            <li><a href="product-quality.html"><i class="ti-more"></i>Product Quality </a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="pie-chart"></i>
+                            <span>Profit Managnment</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="net-profit.html"><i class="ti-more"></i>Net Profit</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="hard-drive"></i>
+                            <span>Reports</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="Earning-report.html"><i class="ti-more"></i>Earning Report</a></li>
+                            <li class="treeview">
+                                <a href="#"> <i class="fa fa-area-chart" aria-hidden="true"></i> product wise reports
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="product-report.html"><i class="ti-more"></i>Product Reports </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sales-report.html"><i class="ti-more"></i>Sales Report</a></li>
+                            <li><a href="Purchase-report.html"><i class="ti-more"></i>Purchase report </a></li>
+                            <li><a href="Invoice-Report.html"><i class="ti-more"></i> Invoice Report</a></li>
+                            <li><a href="Inventory-Report.html"><i class="ti-more"></i> Inventory Report</a></li>
+                            <li><a href="Expense-Report.html"><i class="ti-more"></i>Expense Report </a></li>
+                            <li><a href="Customer-Report.html"><i class="ti-more"></i> Customer Report</a></li>
+                            <li><a href="Income-Report.html"><i class="ti-more"></i>Income Report </a></li>
+                            <li><a href="Profit-Loss.html"><i class="ti-more"></i> Profit & Loss</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="grid"></i>
+                            <span>Peoples</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="customer.html"><i class="ti-more"></i> Customers</a></li>
+                            <li><a href="suppliers.html"><i class="ti-more"></i>Suppliers </a></li>
+                            <li><a href="stores.html"><i class="ti-more"></i>Stores </a></li>
+                            <li><a href="warehouses.html"><i class="ti-more"></i> Warehouses</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="layers"></i>
+                            <span>HRM</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="employees.html"><i class="ti-more"></i>Employees</a></li>
+                            <li><a href="departmrnts.html"><i class="ti-more"></i>Departments</a></li>
+                            <li><a href="designation.html"><i class="ti-more"></i>Designation</a></li>
+                            <li><a href="shifts.html"><i class="ti-more"></i>Shifts</a></li>
+                            <li class="treeview">
+                                <a href="#"> <i class="fa fa-check-square-o" aria-hidden="true"></i> Attendence
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="employee.addendance.html"><i class="ti-more"></i>Employee</a></li>
+                                    <li><a href="admin-attendence.html"><i class="ti-more"></i>Admin</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                   
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="file"></i>
+                            <span>Delivery Boy</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <li><a href="all-delivery-boy.html"><i class="ti-more"></i>All Delivery boy</a></li>
+                            <li><a href="add-delivery-boy.html"><i class="ti-more"></i>Add Delivery boy </a></li>
+                            <li><a href="payment-history.html"><i class="ti-more"></i>Payment history</a></li>
+                            <li><a href="Cancel-request.html"><i class="ti-more"></i>Cancel Request</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="map"></i>
+                            <span>Refunds</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="Refund-request.html"><i class="ti-more"></i>Refund Request</a></li>
+                            <li><a href="approved-refund.html"><i class="ti-more"></i>Approved Refund</a></li>
+                            <li><a href="requested-refund.html"><i class="ti-more"></i>Requested Refund</a></li>
+                            <li><a href="refund-configuration.html"><i class="ti-more"></i>Refund Configuration</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="hard-drive"></i>
+                            <span>Sellers</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="all-saller.html"><i class="ti-more"></i>All Sellers</a></li>
+                            <li><a href="payout.html"><i class="ti-more"></i>Payout </a></li>
+                            <li><a href="payout-request.html"><i class="ti-more"></i>Payout Request</a></li>
+                            <li><a href="seller-commission.html"><i class="ti-more"></i>Seller Commission </a></li>
+                            <li><a href="seller-packeges.html"><i class="ti-more"></i> Seller Packeges</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="alert-triangle"></i>
+                            <span>System</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="update.html"><i class="ti-more"></i> Update </a></li>
+                            <li><a href="server-status.html"><i class="ti-more"></i> Server status</a></li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+            </section>
+
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="Settings"
+                    aria-describedby="tooltip92529"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i
+                        class="ti-email"></i></a>
+                <!-- item-->
+                <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><i
+                        class="ti-lock"></i></a>
+            </div>
+        </aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<div class="container-full">
+
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<div class="col-xl-6">
+							<div class="row">
+								<div class="col-xl-6 col-md-6 col-sm-12">
+									<div class="box overflow-hidden ">
+										<div class="box-body" style="height: 300px;">
+											<div class="d-flex justify-content-between">
+												<div>
+													<h1 class="fs-30 fw-600 text-black mb-1">
+														5,093.830  ৳
+													</h1>
+												</div>
+												<div class="mt-2">
+													<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+														<path id="Path_41567" data-name="Path 41567" d="M21,13.75a1.25,1.25,0,0,0,2.5,0,7.508,7.508,0,0,0-4.068-6.667,4.375,4.375,0,1,0-6.865,0A7.508,7.508,0,0,0,8.5,13.75a1.25,1.25,0,0,0,2.5,0,5,5,0,0,1,10,0ZM14.125,4.375A1.875,1.875,0,1,1,16,6.25,1.877,1.877,0,0,1,14.125,4.375ZM10.932,24.083a4.375,4.375,0,1,0-6.865,0A7.508,7.508,0,0,0,0,30.75a1.25,1.25,0,0,0,2.5,0,5,5,0,0,1,10,0,1.25,1.25,0,0,0,2.5,0A7.508,7.508,0,0,0,10.932,24.083ZM5.625,21.375A1.875,1.875,0,1,1,7.5,23.25,1.877,1.877,0,0,1,5.625,21.375Zm22.307,2.708a4.375,4.375,0,1,0-6.865,0A7.508,7.508,0,0,0,17,30.75a1.25,1.25,0,0,0,2.5,0,5,5,0,0,1,10,0,1.25,1.25,0,0,0,2.5,0A7.508,7.508,0,0,0,27.932,24.083Zm-5.307-2.708A1.875,1.875,0,1,1,24.5,23.25,1.877,1.877,0,0,1,22.625,21.375Zm0,0" fill="#d5d6db"></path>
+													</svg>
+												</div>
+											</div>
+											<div class="mt-3">
+												<h6 class="fs-13 fw-600 text-secondary mb-2 ">Total Sales All time</h6>
+												<div class=" Pending-order rounded-2 h-60 d-flex align-items-center bg-primary justify-content-between text-white px-2rem mb-3 mb-sm-3">
+													<div class="d-flex flex-wrap align-items-center">
+														<h5 class="fs-13 fw-600 text-white mb-0">Sales this month </h5>
+													</div>
+													<h5 class="fs-13 fw-600 mb-0 text-white ">
+														60,0000 ৳
+													</h5>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-md-6 col-sm-12">
+									<div class="box overflow-hidden ">
+										<div class="box-body" style="height: 300px;">
+											<div class="d-flex justify-content-between">
+												<div>
+													<h1 class="fs-30 fw-600 text-black mb-1">
+														72.300   ৳
+													</h1>
+												</div>
+												<div class="mt-2">
+													<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+														<path id="Path_41567" data-name="Path 41567" d="M21,13.75a1.25,1.25,0,0,0,2.5,0,7.508,7.508,0,0,0-4.068-6.667,4.375,4.375,0,1,0-6.865,0A7.508,7.508,0,0,0,8.5,13.75a1.25,1.25,0,0,0,2.5,0,5,5,0,0,1,10,0ZM14.125,4.375A1.875,1.875,0,1,1,16,6.25,1.877,1.877,0,0,1,14.125,4.375ZM10.932,24.083a4.375,4.375,0,1,0-6.865,0A7.508,7.508,0,0,0,0,30.75a1.25,1.25,0,0,0,2.5,0,5,5,0,0,1,10,0,1.25,1.25,0,0,0,2.5,0A7.508,7.508,0,0,0,10.932,24.083ZM5.625,21.375A1.875,1.875,0,1,1,7.5,23.25,1.877,1.877,0,0,1,5.625,21.375Zm22.307,2.708a4.375,4.375,0,1,0-6.865,0A7.508,7.508,0,0,0,17,30.75a1.25,1.25,0,0,0,2.5,0,5,5,0,0,1,10,0,1.25,1.25,0,0,0,2.5,0A7.508,7.508,0,0,0,27.932,24.083Zm-5.307-2.708A1.875,1.875,0,1,1,24.5,23.25,1.877,1.877,0,0,1,22.625,21.375Zm0,0" fill="#d5d6db"></path>
+													</svg>
+												</div>
+											</div>
+											<div class="mt-3">
+												<h6 class="fs-13 fw-600 text-secondary mb-2 ">Payouts</h6>
+												<div class=" Pending-order  rounded-2 h-60 d-flex align-items-center justify-content-between text-white px-2rem mb-3 mb-sm-3">
+													<div class="d-flex flex-wrap align-items-center">
+														<h5 class="fs-13 fw-600 text-white mb-0">Payouts this month  </h5>
+													</div>
+													<h5 class="fs-13 fw-600 mb-0 text-white ">
+														00,00 ৳
+													</h5>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="row">
+								<div class="col-xl-6 col-md-6 col-sm-12">
+									<div class="box overflow-hidden ">
+										<div class="box-body" style="height: 300px;">
+											<div class="d-flex justify-content-between">
+												<div>
+													<h1 class="fs-30 fw-600 text-black mb-1">
+														90
+													</h1>
+												</div>
+												<div class="mt-2">
+													<svg id="Layer_51" data-name="Layer 51" xmlns="http://www.w3.org/2000/svg" width="31.994" height="32" viewBox="0 0 31.994 32">
+														<path id="Path_41568" data-name="Path 41568" d="M22.534,33.9a3.963,3.963,0,0,1-2.813-1.139L3.175,16.112A4.02,4.02,0,0,1,2.037,12.49L3.175,6.854A3.952,3.952,0,0,1,6.056,3.768l6.377-1.754a4.1,4.1,0,0,1,3.906,1.139L32.783,19.6a4.031,4.031,0,0,1,0,5.694l-7.368,7.47A3.986,3.986,0,0,1,22.534,33.9Zm8.677-12.686L14.722,4.724a1.788,1.788,0,0,0-1.3-.524,1.492,1.492,0,0,0-.444.057L6.592,5.965A1.72,1.72,0,0,0,5.339,7.286L4.257,12.912a1.788,1.788,0,0,0,.49,1.628L21.327,31.1a1.765,1.765,0,0,0,1.207.524,1.663,1.663,0,0,0,1.207-.5l7.5-7.47A1.742,1.742,0,0,0,31.212,21.213Z" transform="translate(-1.966 -1.901)" fill="#d5d6dc"></path>
+														<path id="Path_41569" data-name="Path 41569" d="M20.246,26A1.139,1.139,0,0,1,18.629,24.4L24.824,18.2a1.139,1.139,0,1,1,1.606,1.617Zm-7.983-9.953a4.316,4.316,0,1,1,4.293-4.339A4.339,4.339,0,0,1,12.263,16.052Zm1.355-6.229a2,2,0,0,0-1.435-.6,1.947,1.947,0,0,0-1.446.569,1.981,1.981,0,0,0-.581,1.412,2.129,2.129,0,0,0,.649,1.435,2.016,2.016,0,0,0,2.847,0,1.925,1.925,0,0,0,.569-1.412,2.027,2.027,0,0,0-.6-1.4Z" transform="translate(-1.557 -1.135)" fill="#d5d6dc"></path>
+													</svg>
+												</div>
+											</div>
+											<div class="mt-3">
+												<h6 class="fs-13 fw-600 text-secondary mb-2 ">Total Category</h6>
+												<div class="d-flex justify-content-between mb-1">
+													<h5 class="fs-13 opacity-60 mb-0 d-flex align-items-center text-truncate mr-2" title="Cellphones Tabs">
+														<span class="badge badge-sm badge-dot badge-danger mr-2" style="height:4px !important; width:20px !important;"></span>
+														Cellphones Tabs
+													</h5>
+													<h5 class="fs-13  mb-0">
+														৳1,494.000
+													</h5>
+												</div>
+												<div class="d-flex justify-content-between mb-1">
+													<h5 class="fs-13 opacity-60 mb-0 d-flex align-items-center text-truncate mr-2" title="Men Clothing Fashion">
+														<span class="badge badge-sm badge-dot badge-warning mr-2" style="height:4px !important; width:20px !important;"></span>
+														Men Clothing Fashion
+													</h5>
+													<h5 class="fs-13  mb-0">
+														৳1,415.850
+													</h5>
+												</div>
+												<div class="d-flex justify-content-between mb-1">
+													<h5 class="fs-13 opacity-60 mb-0 d-flex align-items-center text-truncate mr-2" title="Computer Accessories">
+														<span class="badge badge-sm badge-dot badge-primary mr-2" style="height:4px !important; width:20px !important;"></span>
+														Computer Accessories
+													</h5>
+													<h5 class="fs-13  mb-0">
+														৳1,415.230
+													</h5>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-md-6 col-sm-12">
+									<div class="box overflow-hidden ">
+										<div class="box-body" style="height: 300px;">
+											<div class="d-flex justify-content-between">
+												<div>
+													<h1 class="fs-30 fw-600 text-black mb-1">
+														50
+													</h1>
+												</div>
+												<div class="mt-2">
+													<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+														<path id="_137b5e1009c61a91dc419a2998502736" data-name="137b5e1009c61a91dc419a2998502736" d="M27.144,17.266A4.922,4.922,0,0,1,32,22.207h0v4.836A4.937,4.937,0,0,1,27.144,32H22.407a4.922,4.922,0,0,1-4.841-4.957h0V22.207a4.892,4.892,0,0,1,4.841-4.942h4.737Zm-20.343,0a1.3,1.3,0,0,1,1.247.619,1.358,1.358,0,0,1,0,1.415,1.3,1.3,0,0,1-1.247.619H4.856A2.281,2.281,0,0,0,2.6,22.208h0v4.775a2.326,2.326,0,0,0,2.257,2.289H9.622a2.219,2.219,0,0,0,1.6-.665,2.313,2.313,0,0,0,.662-1.624h0v-7.17l-.02-.178a1.342,1.342,0,0,1,.606-1.19,1.285,1.285,0,0,1,1.462.043,1.348,1.348,0,0,1,.506,1.4h0v7.14a4.907,4.907,0,0,1-4.856,4.957H4.856A5.012,5.012,0,0,1,0,27.028H0v-4.82a4.994,4.994,0,0,1,1.423-3.5,4.791,4.791,0,0,1,3.433-1.442H6.8Zm20.343,2.653H22.407a2.266,2.266,0,0,0-2.242,2.289h0v4.836a2.3,2.3,0,0,0,.652,1.623,2.2,2.2,0,0,0,1.59.666h4.737a2.2,2.2,0,0,0,1.59-.666,2.3,2.3,0,0,0,.652-1.623h0V22.207a2.313,2.313,0,0,0-.657-1.619,2.219,2.219,0,0,0-1.585-.67ZM27.144,0a5.013,5.013,0,0,1,4.841,4.957h0v4.82a5,5,0,0,1-1.376,3.512A4.794,4.794,0,0,1,27.2,14.78h-1.96a1.337,1.337,0,0,1,0-2.653h1.9a2.235,2.235,0,0,0,1.6-.691,2.33,2.33,0,0,0,.645-1.644h0V4.957a2.3,2.3,0,0,0-2.242-2.289H22.407a2.266,2.266,0,0,0-2.242,2.289h0v7.231l-.015.166a1.33,1.33,0,0,1-1.321,1.137,1.28,1.28,0,0,1-.91-.413,1.335,1.335,0,0,1-.352-.951h0V4.957a5,5,0,0,1,1.413-3.5A4.791,4.791,0,0,1,22.407,0h4.737ZM9.593,0a4.922,4.922,0,0,1,4.856,4.957h0V9.793a4.994,4.994,0,0,1-1.423,3.5,4.791,4.791,0,0,1-3.433,1.442H4.856A4.922,4.922,0,0,1,0,9.793H0V4.957A4.937,4.937,0,0,1,4.856,0H9.593Zm0,2.668H4.856a2.218,2.218,0,0,0-1.614.654,2.313,2.313,0,0,0-.672,1.635h0V9.793a2.314,2.314,0,0,0,.656,1.664,2.218,2.218,0,0,0,1.63.67H9.593a2.235,2.235,0,0,0,1.6-.691,2.33,2.33,0,0,0,.645-1.644h0V4.957A2.281,2.281,0,0,0,9.593,2.668Z" fill="#d5d6dc"></path>
+													</svg>
+												</div>
+											</div>
+											<div>
+												<h6 class="fs-13 fw-600 text-secondary mb-2 ">Top Brands</h6>
+												<div class="d-flex justify-content-between mb-0">
+													<h5 class="fs-13  mb-0 text-truncate mr-2" title="Mustard oil">
+														<span class="badge badge-md badge-dot badge-circle badge-success mr-2"></span>
+														Mustard oil
+													</h5>
+													<h5 class="fs-13  mb-0">
+
+														৳ 1400
+													</h5>
+												</div>
+												<div class="d-flex justify-content-between mb-0">
+													<h5 class="fs-13  mb-0 text-truncate mr-2" title="Ghee">
+														<span class="badge badge-md badge-dot badge-circle badge-primary mr-2"></span>
+														Ghee
+													</h5>
+													<h5 class="fs-13  mb-0">
+														৳ 800
+													</h5>
+												</div>
+												<div class="d-flex justify-content-between mb-0">
+													<h5 class="fs-13  mb-0 text-truncate mr-2" title="Chia seeds">
+														<span class="badge badge-md badge-dot badge-circle badge-info mr-2"></span>
+														Chia seeds
+													</h5>
+													<h5 class="fs-13  mb-0">
+														৳ 1000
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class=" col-xl-6 col-md-12 col-sm-12">
+							<div class="box overflow-hidden ">
+								<div class="box-body " style="height: 480px;">
+									<h3 class="fs-16 fw-600 text-soft-dark mb-2">Net Sales</h3>
+									<ul class="nav-tabs" id="nav-tabs-1">
+										<li><button class="tab-button active" onclick="showChart1('all')">All</button>
+										</li>
+										<li><button class="tab-button" onclick="showChart1('today')">Today</button></li>
+										<li><button class="tab-button" onclick="showChart1('week')">Week</button></li>
+										<li><button class="tab-button" onclick="showChart1('month')">Month</button></li>
+									</ul>
+									<div >
+										<canvas id="netSalesChart1"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=" col-xl-6 col-md-12 col-sm-12">
+							<div class="box overflow-hidden ">
+								<div class="box-body " style="height: 480px;">
+									<h3 class="fs-16 fw-600 text-soft-dark mb-2">Payouts</h3>
+									<ul class="nav-tabs" id="nav-tabs-2">
+										<li><button class="tab-button active" onclick="showChart2('all')">All</button>
+										</li>
+										<li><button class="tab-button" onclick="showChart2('today')">Today</button></li>
+										<li><button class="tab-button" onclick="showChart2('week')">Week</button></li>
+										<li><button class="tab-button" onclick="showChart2('month')">Month</button></li>
+									</ul>
+									<div >
+										<canvas id="netSalesChart2"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=" col-xl-6 col-md-12 col-sm-12">
+							<div class="box overflow-hidden ">
+								<div class="box-body " style="height: 480px;">
+									<h3 class="fs-16 fw-600 text-soft-dark mb-2">Sale Analytics</h3>
+									<ul class="nav-tabs" id="nav-tabs-sale">
+										<li><button class="tab-button active" onclick="showChart('sale', 'all')">All</button></li>
+										<li><button class="tab-button" onclick="showChart('sale', 'today')">Today</button></li>
+										<li><button class="tab-button" onclick="showChart('sale', 'week')">Week</button></li>
+										<li><button class="tab-button" onclick="showChart('sale', 'month')">Month</button></li>
+									</ul>
+									<div >
+										<canvas id="saleChart"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=" col-xl-6 col-md-12 col-sm-12">
+							<div class="box overflow-hidden ">
+								<div class="box-body " style="height: 480px;">
+									<h3 class="fs-16 fw-600 text-soft-dark mb-2">Payouts Analytics</h3>
+									<ul class="nav-tabs" id="nav-tabs-payouts">
+										<li><button class="tab-button active" onclick="showChart('payouts', 'all')">All</button></li>
+										<li><button class="tab-button" onclick="showChart('payouts', 'today')">Today</button></li>
+										<li><button class="tab-button" onclick="showChart('payouts', 'week')">Week</button></li>
+										<li><button class="tab-button" onclick="showChart('payouts', 'month')">Month</button></li>
+									</ul>
+									<div >
+										<canvas id="payoutsChart"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						
+						
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+		</div>
+		<!-- /.content-wrapper -->
+		<footer class="main-footer">
+			<div class="pull-right d-none d-sm-inline-block">
+				<ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+					<li class="nav-item">
+						<a class="nav-link" href="#">V.0</a>
+					</li>
+				</ul>
+			</div>
+			&copy; 2024 <a href="#">IT Sheba LTD</a>. All Rights Reserved.
+		</footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar">
+
+			<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"><i
+						class="ion ion-close text-white" data-toggle="control-sidebar"></i></span> </div>
+			<!-- Create the tabs -->
+			<ul class="nav nav-tabs control-sidebar-tabs">
+				<li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab" class="active">Chat</a></li>
+				<li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab">Todo</a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Home tab content -->
+				<div class="tab-pane active" id="control-sidebar-home-tab">
+					<div class="flexbox">
+						<a href="javascript:void(0)" class="text-grey"><i class="ti-minus"></i></a>
+						<p>Users</p>
+						<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+					</div>
+					<div class="lookup lookup-sm lookup-right d-none d-lg-block">
+						<input type="text" name="s" placeholder="Search" class="w-p100">
+					</div>
+					<div class="media-list media-list-hover mt-20">
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-success" href="#">
+								<img src="images/admin-panel-img/user.png" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>Tyler</strong></a>
+								</p>
+								<p>Praesent tristique diam...</p>
+								<span>Just now</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-danger" href="#">
+								<img src="images/admin-panel-img/user.png" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>Luke</strong></a>
+								</p>
+								<p>Cras tempor diam ...</p>
+								<span>33 min ago</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-warning" href="#">
+								<img src="images/admin-panel-img/user.png" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>Evan</strong></a>
+								</p>
+								<p>In posuere tortor vel...</p>
+								<span>42 min ago</span>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+				<!-- /.tab-pane -->
+				<!-- Settings tab content -->
+				<div class="tab-pane" id="control-sidebar-settings-tab">
+					<div class="flexbox">
+						<a href="javascript:void(0)" class="text-grey"><i class="ti-minus"></i></a>
+						<p>Todo List</p>
+						<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+					</div>
+					<ul class="todo-list mt-20">
+						<li class="py-15 px-5 by-1">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_1" class="filled-in">
+							<label for="basic_checkbox_1" class="mb-0 h-15"></label>
+							<!-- todo text -->
+							<span class="text-line">Nulla vitae purus</span>
+							<!-- Emphasis label -->
+							<small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+							<!-- General tools such as edit or delete-->
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+
+						<li class="py-15 px-5">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_10" class="filled-in">
+							<label for="basic_checkbox_10" class="mb-0 h-15"></label>
+							<span class="text-line">Proin nec mi porta</span>
+							<small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /.tab-pane -->
+			</div>
+		</aside>
+
+		<div class="control-sidebar-bg"></div>
+
+	</div>
+	<!-- ./wrapper -->
+
+	<!-- Vendor JS -->
+	<script src="js/vendors.min.js"></script>
+	<script src="assets/icons/feather-icons/feather.min.js"></script>
+	<script src="assets/vendor_components/easypiechart/dist/jquery.easypiechart.js"></script>
+	<script src="assets/vendor_components/apexcharts-bundle/irregular-data-series.js"></script>
+	<script src="assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+	<!-- admin js -->
+	<script src="js/template.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="js/earning-chart.js"></script>
+	
+</body>
+
+</html>
